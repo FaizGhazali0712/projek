@@ -2,7 +2,9 @@
 <html>
     <head>
         <script>
-
+            function tambah() {
+                alert("Produk Berhasil ditambahkan ke keranjang")
+            }
         </script>
         <style>
             html {
@@ -38,13 +40,31 @@
 
             }
             .button {
-                width: 50px;
+                padding: 5px;
+                border-radius: 5px;
+                font-weight: 600;
+                width: 50%;
+                background: rgb(0, 123, 255);
+                background: linear-gradient(90deg, rgba(0, 123, 255, 1) 52%, rgba(0, 86, 179, 1) 100%);
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
 
             }
             #button {
                 width: 10px;
                 height: 10px;
                 color: white;
+            }
+            .new {
+                text-decoration: none;
+                margin: 5px;
+                color: white;
+            }
+            #text {
+                text-align: center;
+                width: 100%;
+                padding: 10px;
             }
             @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
         </style>
@@ -55,12 +75,13 @@
             <img src="photo-1549298916-b41d501d3772.avif" class="round-up">
             <h2>Produk Premium</h2>
             <h3 class="price">Rp 250.000</h3>
-            <p>
+            <p id="text">
                 Produk premium dengan kualitas terbaik, nyaman digunakan, dan desain elegan. Cocok
                 untuk segala kebutuhan anda
             </p>
             <div class="button">
                 <img src="3144456.png" id="button">
+                <a  onclick="tambah()" class="new">Tambahkan ke Keranjang</a>
 
             </div>
         </div>
